@@ -1,0 +1,487 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    
+    <style>
+    .header1{
+        background-color: black;
+        color: white;
+        padding-top: 10px;
+    }
+    header{
+        margin:20px;
+    }
+    p {
+        font-family:cambria;
+    }
+    .hkaire {
+        float: left;
+    }
+    .hcentras {
+        text-align:center;
+    }
+
+    @keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-20px);
+		-ms-transform:     translateY(-20px);
+		transform:         translateY(-20px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+    }
+    .logotipas {  
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    }
+    .logotipas:hover {
+        cursor: pointer;
+        animation-name: bounce;
+        -moz-animation-name: bounce;
+    }
+
+
+    .nuotrauka {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    }
+
+    @keyframes slidein 
+    {
+        from {
+            margin-left: 100%;
+            width: 100%;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    .meniu{
+        font-family:cambria;
+		background-color:rgb(255, 255, 255);
+        text-align: center;
+	}
+	.meniu li{
+		color:black;
+		display:inline-block;
+		list-style-type:none;
+		margin-right:30px;
+        transition-duration: 0.4s;
+		padding:5px;
+		cursor:pointer;
+	}
+	.meniu li:hover{
+		background-color:#C38585;
+		color:WHITE;
+	}
+    .textbutt{
+        color: #525252; 
+        border: none; 
+        font-family:cambria; 
+        background-color: inherit; 
+        cursor: pointer; 
+        float:right; 
+        margin: 50 50 30 20;
+    }
+    .textbutt1{
+        color: #757575; 
+        border: none;
+        background-color: inherit; 
+        cursor: pointer;
+        margin: 30 5 0 5;
+    }
+    .textbutt1:hover{
+        text-decoration: underline;
+    }
+    .lakas{
+        border: none;
+        background-color: inherit; 
+        cursor: pointer;
+    }
+    .button {
+        font-family:cambria;
+        display: block;
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        background-color: #C38585;
+        border: 2px solid #9D1515;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 16px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .button:hover {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    .button1 {
+        font-family:cambria;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        background-color: #C38585;
+        border: 2px solid #9D1515;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 16px;
+        padding: 20px;
+        width: 300px;
+        transition: all 0.4s;
+        cursor: pointer;
+        margin-bottom: 100px;
+    }
+
+    .button1 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.4s;
+    }
+
+    .button1 span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.4s;
+    }
+    .button1:hover {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .button1:hover span {
+        padding-right: 25px;
+    }
+
+    .button1:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    .table1{
+        width:95%;
+        font-family:cambria;
+        font-size: 14px;
+        text-align: center;
+        margin-left: auto; 
+        margin-right: auto;
+        border-collapse: separate;
+        border-spacing: 0 10px;
+    }
+    .prekes{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .preke{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width:20rem;
+        min-width:18rem;
+        margin: 10px;
+        padding: 0 30 0 30px;
+        text-align: center;
+    }
+    .info{
+        text-align: right;
+        margin: 50 100 50 0px;
+    }
+    .column {
+        width: 25%;
+        text-align: center;
+        height: auto; /* Should be removed. Only for demonstration */
+    }
+/* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .footeris{
+        background-color: #F9F3F3;
+        text-align: center;
+       padding: 50 0 50 0px;
+        
+    }
+    @media only screen and (max-width:800px) {
+    /* For tablets: */
+        .column {
+            width:50%;
+            height:auto;
+        }
+        .numeriai
+        {
+            margin: 0 auto 0 auto;
+            text-align: center;
+            width:80%;
+        }
+        
+        .logotipas{
+            width:100%;
+        }
+
+    }
+    @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+        .column 
+        {
+            width:100%;
+            height:auto;
+        }
+        .numeriai
+        {
+            margin: 0 auto 0 auto;
+            text-align: center;
+            width:80%;
+        }
+        
+        .logotipas{
+            width:100%;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div class="header1 px-3">
+        <p class="hkaire"><a href="Kontaktai.html" style="color: white; text-decoration: none">Kontaktai</a></p>
+        <p class="hcentras">Nemokamas pristatymas nuo 30€!</p>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"></a>
+        
+          <div class="logotipas">
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="Pagrindinis.html"><img src="LOGO.png" alt="logo" width=150></a></li>
+                </ul>
+            </div>
+    
+          <div class="col-md-3 text-end">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="icons" viewBox="0 0 16 16" style="margin-top: 50px; margin-bottom: 50px;cursor: pointer">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="icons" viewBox="0 0 16 16" style="margin-top: 50px; margin-bottom: 50px; margin-left:50px;cursor: pointer">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+
+          </div>
+        </header>
+      </div>
+    </header>
+
+    <div class="meniu">
+        <ul>
+            <li><a href="Parduotuve.html" style="color: black; text-decoration: none">PARDUOTUVĖ</a></li>
+            <li>AKADEMIJA</li>
+            <li>GROŽIO STUDIJA</li>
+            <li><a href="Profilis.html" style="color: black; text-decoration: none">PROFILIS</a></li>
+        </ul>
+    </div>
+
+    <!-----------------------------------------TURINYS--------------------------------------------------->
+
+    <div class='nuotrauka'>
+    <img src="gel.png" style="width:100%" />
+    </div>
+
+    <button class="textbutt" >RŪŠIUOTI
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#525252" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg> </button>
+ 
+    <hr style="margin-bottom: 50px; margin-top: 120px"></hr>
+
+    <div class="prekes">
+        <div class="preke">
+            <button class="lakas"><img src="1g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, DO IT BEST!</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" data-micron="bounce" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+                </div>
+        <div class="preke">
+            <button class="lakas"><img src="2g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, DRESS CODE</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+              </div>
+        <div class="preke">
+            <button class="lakas"><img src="3g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, ULTRA VIOLET</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+             </div>
+        <div class="preke">
+            <button class="lakas"><img src="4g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, STUDIO WHITE</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+            </div>
+<!------------------------------------------------------------------------------------------------->
+        <div class="preke">
+            <button class="lakas"><img src="5g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, FAIRYTALE</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+            </div>
+        <div class="preke">
+            <button class="lakas"><img src="6g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, FOREVER YUMMY</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+            </div>
+        <div class="preke">
+            <button class="lakas"><img src="7g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, GREENERY</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+            </div>
+        <div class="preke">
+            <button class="lakas"><img src="8g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, SHOW TIME</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+            </div>
+<!------------------------------------------------------------------------------------------------->
+        <div class="preke">
+            <button class="lakas"><img src="9g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, LA FEMME</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+            </div>
+        <div class="preke">
+            <button class="lakas"><img src="10g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, GRANDE DAME!</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+            </div>
+        <div class="preke">
+            <button class="lakas"><img src="11g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, LIKE TOTALLY</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+            </div>
+        <div class="preke">
+            <button class="lakas"><img src="12g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, ALL ABOUT YOU</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+            </div>
+<!------------------------------------------------------------------------------------------------->
+        <div class="preke">
+            <button class="lakas"><img src="13g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, LOLLIPOP</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+               </div>
+        <div class="preke">
+            <button class="lakas"><img src="14g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, MARSALA</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+              </div>
+        <div class="preke">
+            <button class="lakas"><img src="15g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, MERCI</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+             </div>
+        <div class="preke">
+            <button class="lakas"><img src="16g.jpg" style="width:220px;"></img></button>
+            <p>"STUDIOS DIDIER" GELINIS LAKAS, BROWN MIST</p>
+            <p style="color:red">6,99 €</p><p style="color:solid black; text-decoration: line-through; margin-top: -10px;">9,99 €</p>
+            <button class="button1" style="vertical-align:middle; font-size: 14px; width: 150px;padding: 10px;background-color:#F9F3F3;color:black;border:2px solid #929292;margin-bottom: 70px"><span>Į KREPŠELĮ</span></button>
+            </div>
+      </div>
+
+<!------------------------------------------------------------------------------------------------->
+
+<div class="numeriai" style="margin-bottom: 100px;">
+      <p style="text-align: center;">
+        <button class="textbutt1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg></button>
+        <button class="textbutt1">1</button> <button class="textbutt1">2</button> <button class="textbutt1">3</button> <button class="textbutt1">4</button> <button class="textbutt1">5</button>
+        <button class="textbutt1">6</button> <button class="textbutt1">7</button> <button class="textbutt1">8</button> <button class="textbutt1">9</button> <button class="textbutt1">10</button>
+        <button class="textbutt1">11</button> <button class="textbutt1">12</button> <button class="textbutt1">13</button> <button class="textbutt1">...</button> <button class="textbutt1">16</button>
+        <button class="textbutt1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg></button>
+    </p>
+</div>
+
+      <!---------------------------------------------FOOTERIS------------------------------------------------------------->
+      
+      <footer>
+        <div class="footeris">
+            <div class="row">
+                <div class="column">
+                    <p>Mūsų tel. numeris<br>
+                    +370 610 10101</p>
+                </div>
+                <div class="column">
+                    <p>El. paštas<br>
+                    nailita@nailita.lt</p>
+                </div>
+                <div class="column">
+                    <p>Darbo laikas<br>
+                    I-V 8:00-20:00 val.</p>
+                </div>
+                <div class="column">
+                    <p>Adresas<br>
+                    Algirdo g. 8, Vilnius</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <p style="margin-bottom:10px">INFORMACIJA</p>
+            <p style="margin-bottom:5px">Apie mus</p>
+            <p style="margin-bottom:5px">Privatumo politika</p>
+            <p>Prekių grąžinimo sąlygos</p>
+        </div>
+    
+    <p style="margin:0 0 30 30px;">© NAILITA</p>
+
+  </footer>
+
+</body>
+</html>
